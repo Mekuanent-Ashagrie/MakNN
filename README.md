@@ -32,39 +32,39 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 
   1. Activations functions with their **derivatives**
     
-        Sigmoid
+        a. Sigmoid
     
-        SoftMax
+        b. SoftMax
         
-        Relu
+        c. Relu
     
-        Tanh
+        d. Tanh
         
-        Leaky Relu
+        e. Leaky Relu
   2. Weight initialization
   3. Forward propagation
   4. Back propagation
   5. Optimization algorithms
     
-        Momentum
+        a. Momentum
         
-        RMS
+        b. RMS
         
-        Adam
+        c. Adam
   
   6. Batch normalization
   7. Regularization
     
-        L2
+        a. L2
         
-        Dropouts
+        b. Dropouts
   
   8. Frobenius norm
   9. Loss functions with their **derivatives**
         
-        Mean square loss
+        a. Mean square loss
         
-        Logarithmic loss
+        b. Logarithmic loss
   
   10. Prediction
   11. Prediction accuracy
@@ -77,17 +77,17 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
   18. Mini batch processing
   19. Other additional functions
     
-        Normalize input
+        a. Normalize input
         
-        Split dataset
+        b. Split dataset
         
-        Encode dependent variables specially for multi-class classification
+        c. Encode dependent variables specially for multi-class classification
 
 **How to use this library? (Use the classification problem example on a modified placement dataset taken from Kaggle)**
 
 - Download and import this file into your script
 
-![](RackMultipart20200720-4-3ciisg_html_88301ec8c7ec3496.png)
+![]()
 
 - Create object of MakNN class
 
