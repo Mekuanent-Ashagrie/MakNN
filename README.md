@@ -3,14 +3,14 @@ MakNN is a neural network library to create shallow or deep fully connected neur
 This library can be used to
 
 1. Preprocess your dataset
-  1. Normalize independent variables
-  2. Split to train, dev and test sets
-  3. Encode the dependent variables
+    a. Normalize independent variables
+    b. Split to train, dev and test sets
+    c. Encode the dependent variables
 2. Create ANN&#39;s for
-  1. Regression
-  2. Binary Classification
-  3. Multi class classification
-  4. Multi-task learning
+    a. Regression
+    b. Binary Classification
+    c. Multi class classification
+    d. Multi-task learning
 3. Save, load and operate on saved models
 4. Visualize parameters as well as model structures
 5. Outputs from this model can be used to visualize/plot and evaluate your model performance
