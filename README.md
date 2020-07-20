@@ -87,25 +87,25 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 
 - Download and import this file into your script
 
-![]()
+![](1.png)
 
 - Create object of MakNN class
 
-![](RackMultipart20200720-4-3ciisg_html_71367d029ffe3fa4.png)
+![](2.png)
 
 - Parameter structures
   - Preprocessing components
     - Normalize your data (optional)
 
-![](RackMultipart20200720-4-3ciisg_html_76c3a1312135e54b.png)
+![](3.png)
 
     - Split your data to train, dev and test
 
-![](RackMultipart20200720-4-3ciisg_html_1853c83179c9ed2a.png)
+![](4.png)
 
   - Initialize your model:
 
-init\_model(layer, activations, input\_shape, l2\_reg\_param = 0, drop\_out\_param = [], batch\_norm = [], weight\_init = True)
+init_model(layer, activations, input_shape, l2_reg_param = 0, drop_out_param = [], batch_norm = [], weight_init = True)
 
     - layer: this is used to define hidden layers with the number of hidden units. It is defined as a list containing number of hidden units in each layer.
 
