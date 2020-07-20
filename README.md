@@ -97,63 +97,63 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
   - Preprocessing components
     - Normalize your data (optional)
 
-![](3.png)
+        ![](3.png)
 
-    - Split your data to train, dev and test
+  - Split your data to train, dev and test
 
-![](4.png)
+        ![](4.png)
 
   - Initialize your model:
 
-init_model(layer, activations, input_shape, l2_reg_param = 0, drop_out_param = [], batch_norm = [], weight_init = True)
+        init_model(layer, activations, input_shape, l2_reg_param = 0, drop_out_param = [], batch_norm = [], weight_init = True)
 
-    - layer: this is used to define hidden layers with the number of hidden units. It is defined as a list containing number of hidden units in each layer.
+  - layer: this is used to define hidden layers with the number of hidden units. It is defined as a list containing number of hidden units in each layer.
 
-![](RackMultipart20200720-4-3ciisg_html_d55408e73fd20ee.png)
+        ![](5.png)
 
-This implies 4 hidden unites where the first and third layers contain 256 hidden units, the second hidden layer contains 512 hidden units and the output layer contains two hidden units.
+        This implies 4 hidden unites where the first and third layers contain 256 hidden units, the second hidden layer contains 512 hidden units and the output layer contains two hidden units.
 
-    - activations: this is used to define activation functions at each layer and once again this is a list containing activations at each layer
+ - activations: this is used to define activation functions at each layer and once again this is a list containing activations at each layer
 
-![](RackMultipart20200720-4-3ciisg_html_53bfaa89d9c8f6be.png)
+        ![](6.png)
 
-_ **Size of the activations list must be similar to the size of layers list** _. The above example shows that except the output layer with sigmoid activation, others have a relu activation.
+        **Size of the activations list must be similar to the size of layers list. The above example shows that except the output layer with sigmoid activation, others have a relu activation.
 
-    - input\_shape: specifies the input dimension (number of independent variables) and the number of training examples in each batch.
+  - input_shape: specifies the input dimension (number of independent variables) and the number of training examples in each batch.
 
-![](RackMultipart20200720-4-3ciisg_html_76feba5434c5289e.png)
+        ![](7.png)
 
-The above example specifies dimension of input with mini batches containing 10 training examples each. To use a simple gradient descent without mini batches set the second parameter of input shape to 1.
+        The above example specifies dimension of input with mini batches containing 10 training examples each. To use a simple gradient descent without mini batches set the second parameter of input shape to 1.
 
-    - l2\_reg\_param: this is the lambda variable for L2 regularization (weight decay). Set it to a none zero value to apply L2 regularization.
+   - l2_reg_param: this is the lambda variable for L2 regularization (weight decay). Set it to a none zero value to apply L2 regularization.
 
-l2\_reg\_param = 0.67
+            l2_reg_param = 0.67
 
-    - drop\_out\_param: this is used to set dropout values at each hidden layer. Use a list containing dropout amount at each layer. **This list must have equal size with the number of layers.** Set dropout to zero if it is not required on that specific layer.
+   - drop_out_param: this is used to set dropout values at each hidden layer. Use a list containing dropout amount at each layer. **This list must have equal size with the number of layers.** Set dropout to zero if it is not required on that specific layer.
 
-![](RackMultipart20200720-4-3ciisg_html_6ddad14b35cdcafa.png)
+            ![](8.png)
 
-The above example shows that 50% of hidden units in layer 1 and 3 will be dropped whereas 40% of the hidden units on layer two will be dropped, and no need on the final output layer where it is set to 0.
+    The above example shows that 50% of hidden units in layer 1 and 3 will be dropped whereas 40% of the hidden units on layer two will be dropped, and no need on the final output layer where it is set to 0.
 
-    - batch\_norm: this is used to define batch normalization on any of the hidden units. **Similarly, this must have the same size as the layers list and the values are either true or false.**
+   - batch_norm: this is used to define batch normalization on any of the hidden units. **Similarly, this must have the same size as the layers list and the values are either true or false.**
 
-![](RackMultipart20200720-4-3ciisg_html_9bae06b6a9937d2b.png)
+    ![](9.png)
 
-The above example shows normalization applied on the linear function Z of all hidden layers except the output layer
+    The above example shows normalization applied on the linear function Z of all hidden layers except the output layer
 
-    - weight\_init: a Boolean variable either to initialize the weights with a value true, use random values otherwise.
+   - weight_init: a Boolean variable either to initialize the weights with a value true, use random values otherwise.
 
-![](RackMultipart20200720-4-3ciisg_html_fba341b56a093810.png)
+    ![](10.png)
 
-With the model initialization, you will see the structure of your model with all the trainable parameters (only weights and biases) as follows
+    With the model initialization, you will see the structure of your model with all the trainable parameters (only weights and biases) as follows
 
-![](RackMultipart20200720-4-3ciisg_html_3d92de99cdbeffd5.png)
+    ![](11.png)
 
-You can also see the initialized weights and biases simply calling the variables as
+    You can also see the initialized weights and biases simply calling the variables as
 
-![](RackMultipart20200720-4-3ciisg_html_ff251a49515934dd.png)
+    ![](12.png)
 
-**Note:** _ **all except layers, activations and input\_shape variables are optional** _
+**Note:** all except layers, activations and input\_shape variables are optional
 
   - Train your model
 
