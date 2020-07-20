@@ -31,26 +31,41 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 **This library implements the following functions**
 
   1. Activations functions with their **derivatives**
-    1. Sigmoid
-    2. SoftMax
-    3. Relu
-    4. Tanh
-    5. Leaky Relu
+    
+        Sigmoid
+    
+        SoftMax
+        
+        Relu
+    
+        Tanh
+        
+        Leaky Relu
   2. Weight initialization
   3. Forward propagation
   4. Back propagation
   5. Optimization algorithms
-    1. Momentum
-    2. RMS
-    3. Adam
+    
+        Momentum
+        
+        RMS
+        
+        Adam
+  
   6. Batch normalization
   7. Regularization
-    1. L2
-    2. Dropouts
+    
+        L2
+        
+        Dropouts
+  
   8. Frobenius norm
   9. Loss functions with their **derivatives**
-    1. Mean square loss
-    2. Logarithmic loss
+        
+        Mean square loss
+        
+        Logarithmic loss
+  
   10. Prediction
   11. Prediction accuracy
   12. Exponential weighted average
@@ -61,9 +76,12 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
   17. Saving and reloading models
   18. Mini batch processing
   19. Other additional functions
-    1. Normalize input
-    2. Split dataset
-    3. Encode dependent variables specially for multi-class classification
+    
+        Normalize input
+        
+        Split dataset
+        
+        Encode dependent variables specially for multi-class classification
 
 **How to use this library? (Use the classification problem example on a modified placement dataset taken from Kaggle)**
 
