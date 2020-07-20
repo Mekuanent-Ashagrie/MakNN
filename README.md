@@ -185,13 +185,13 @@ For multiclass classification problem your dataset must have classes labeled fro
 -**Working with saved models**
     - it is possible to save your model at the end of training by calling the function 
     
-        mn.save_model(file_name.pkl)
+        mn.save_model('file_name.pkl')
         
    - to load and work with your model just use
    
-         mn.load_model(file_name.pkl)
+         mn.load_model('file_name.pkl')
 
-   Note: in both cases file_name is optional as it will save it or load it as saved_model.pkl when the parameter is not set
+   Note: in both cases file_name is optional as it will save it or load it as 'saved_model.pkl' when the parameter is not set.
 
 
 -**Further to do with the results**
