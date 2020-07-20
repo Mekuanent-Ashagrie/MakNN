@@ -32,14 +32,10 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 
   1. Activations functions with their **derivatives**
     
-        a. Sigmoid
-    
-        b. SoftMax
-        
-        c. Relu
-    
-        d. Tanh
-        
+        a. Sigmoid    
+        b. SoftMax        
+        c. Relu    
+        d. Tanh        
         e. Leaky Relu
   2. Weight initialization
   3. Forward propagation
@@ -87,21 +83,21 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 
 - Download and import this file into your script
 
-![](1.png)
+![](Images/1.png)
 
 - Create object of MakNN class
 
-![](2.png)
+![](Images/2.png)
 
 - Parameter structures
   - Preprocessing components
     - Normalize your data (optional)
 
-     ![](3.png)
+     ![](Images/3.png)
 
   - Split your data to train, dev and test
 
-     ![](4.png)
+     ![](Images/4.png)
 
   - Initialize your model:
 
@@ -109,7 +105,7 @@ _Note: This library can&#39;t be used to build convolutional neural nets or sequ
 
   - layer: this is used to define hidden layers with the number of hidden units. It is defined as a list containing number of hidden units in each layer.
 
-     ![](5.png)
+     ![](Images/5.png)
 
         This implies 4 hidden unites where the first and third layers contain 256 hidden units, the second hidden layer contains 512 hidden units and the output layer contains two hidden units.
 
